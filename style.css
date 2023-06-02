@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    width: 450px;
+    display: flex;
+    
+}
+.info{
+    width: 50%;
+    padding: 25px;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+h2{
+    font-size: 0.65em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    color: hsl(228, 12%, 48%);
+}
+.title{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-family: 'fraunces',sans-serif;
+    line-height: 25px;
+    color: hsl(212, 21%, 14%);
+}
+.text{
+    font-size: .6em;
+    margin-bottom: 20px;
+    line-height: 15px;
+    color: hsl(228, 12%, 48%);
+}
+.price{
+    display: flex;
+    margin-bottom: 20px;
+}
+.actualPrice{
+    font-size: 1.4em;
+    font-family: 'fraunces',sans-serif;
+    color: hsl(158, 36%, 37%);
+}
+.pastPrice{
+    font-size: .7em;
+    margin-left: 10px;
+    margin-top: 8px;
+    color: hsl(228, 12%, 48%);
+}
+.carBtn{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    padding: 5px;
+    position: relative;
+}
+
+svg{
+    position: absolute;
+    right: 120px;
+    bottom: 10px;
+}
+.btnText{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
+
+.carBtn:hover{
+    cursor: pointer;
+}
+
+.carBtn:active{
+    background-color:hsl(159, 100%, 13%);
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        flex-direction: column;
+        width: 90%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        width: 100%;
+        height: 50%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+    }
+    .info{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    svg{
+        right: 190px;
+    }
+    .btnText{
+        right: 100px;
+    }
+}
